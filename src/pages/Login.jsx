@@ -4,7 +4,6 @@ import FormularioLogin from "../components/FormularioLogin"
 function Login() {
   return (
     <div>
-    
     <FormularioLogin/>
     </div>
   )

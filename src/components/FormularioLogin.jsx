@@ -7,7 +7,10 @@ function BasicExample() {
     <div className="Login">
       <div className="Formulario-login">
         <div>
-          <h1>Iniciar sesion</h1>
+            <div className="Titulo-login">
+                <h1>Iniciar sesion</h1>
+            </div>
+          
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Usuario</Form.Label>
@@ -22,14 +25,18 @@ function BasicExample() {
               className="mb-3"
               controlId="formBasicCheckbox"
             ></Form.Group>
-            <Button variant="danger" type="submit">
+            <Button size="lg" variant="danger" type="submit">
               Iniciar
             </Button>
           </Form>
-
-          <a href="">¿Has olvidado tu contraseña?</a>
+           
+        
         </div>
-      </div>
+    
+      </div>    
+      <div className="Olvidar-contraseña">
+              <a href="">¿Has olvidado tu contraseña?</a>
+       </div>
     </div>
   );
 }

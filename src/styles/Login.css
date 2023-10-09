@@ -34,4 +34,34 @@ body {
     color: aliceblue;
     margin-top: 10%;
     margin-left: 35%;
+    
+  }
+
+  .Olvidar-contraseña{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .Olvidar-contraseña a{
+    font-size: x-large;
+    color: aliceblue;
+  }
+
+
+  .Formulario-login div Form{
+    font-size: x-large;
+    width: 400px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  
+  .Formulario-login div Form Button{
+    background-color: #D12323;
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 78%;
+  }
+
+  .Titulo-login{
+    text-align: center;
   }
