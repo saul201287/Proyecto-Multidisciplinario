@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom"
 import '../styles/Login.css'
-
+import Footer from "../components/Footer"
 
 
 function Principal() {
   return (
-    <div >
+    <div>
      <Outlet/>
+     <Footer/>
     </div>
    
   )

@@ -1,11 +1,12 @@
 import React from "react";
 import User from "../img/user.png";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="nav admi">
-      <div className="opciones">
-        <p>Registro de usuarios</p>
+    <nav className="nav1 admi">
+      <div className="opciones" as={Link} to='/inicio'>  
+        <Link to="/inicio">Registro de usuarios</Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="61"
@@ -19,8 +20,8 @@ function Nav() {
           />
         </svg>
       </div>
-      <div className="opciones">
-        <p>Usuarios registrados</p>
+      <div className="opciones" as={Link} to='/inicio/usuarios'>
+        <Link to="/inicio/usuarios">Usuarios registrados</Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="60"
@@ -34,8 +35,8 @@ function Nav() {
           />
         </svg>
       </div>
-      <div className="opciones">
-        <p>Control de ventas</p>
+      <div className="opciones" as={Link} to="/inicio">
+        <Link to='/inicio/ControlDeVentas'>Control de ventas</Link>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +80,7 @@ function Nav() {
           </svg>
         </div>
       </div>
-      <img className="user" src={User} alt="usuario" />
+      <img className="user" src={User} alt="usuario" onClick="" />
     </nav>
   );
 }

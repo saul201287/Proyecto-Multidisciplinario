@@ -1,10 +1,13 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "../styles/Login.css";
+import { Link } from "react-router-dom";
+import Animaciones from "../pages/Animaciones";
 
 function BasicExample() {
   return (
-    <div className="Login">
+    <Animaciones>
+   <div className="Login">
       <div className="Formulario-login">
         <div>
             <div className="Titulo-login">
@@ -25,7 +28,7 @@ function BasicExample() {
               className="mb-3"
               controlId="formBasicCheckbox"
             ></Form.Group>
-            <Button size="lg" variant="danger" type="submit">
+            <Button size="lg" variant="danger" type="submit" as={Link} to="/inicio">
               Iniciar
             </Button>
           </Form>
@@ -38,6 +41,8 @@ function BasicExample() {
               <a href="">¿Has olvidado tu contraseña?</a>
        </div>
     </div>
+    </Animaciones>
+ 
   );
 }
 
